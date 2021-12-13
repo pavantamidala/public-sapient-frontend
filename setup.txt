@@ -1,0 +1,5 @@
+cd into root directory
+
+npm i 
+
+npm rund dev
