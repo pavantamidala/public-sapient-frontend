@@ -3,3 +3,7 @@ cd into root directory
 npm i 
 
 npm rund dev
+
+deployed link :-  https://public-sapient-challenge.netlify.app/
+
+github repo link :-  https://github.com/pavantamidala/public-sapient-frontend
