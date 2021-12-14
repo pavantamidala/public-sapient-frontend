@@ -45,7 +45,7 @@ function App() {
   function positiveHandler(e, id) {
     let temp = products.map((obj) => {
       if (obj.id === id) {
-        obj.quantity = obj.quantity + 1;
+        obj.quantity = Number(obj.quantity) + 1;
         obj.actualPrice = obj.price * obj.quantity;
       }
       return obj;
