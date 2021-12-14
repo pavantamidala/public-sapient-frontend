@@ -27,6 +27,9 @@ function App() {
       setProudcts(arr);
     }
   }, []);
+  useEffect(() => {
+    localStorage.setItem("productsArr", JSON.stringify(products));
+  }, [products]);
   function negativeHandler(e, id) {
     let temp = products.map((obj) => {
       if (obj.id === id) {
@@ -35,7 +38,6 @@ function App() {
       }
       return obj;
     });
-    localStorage.setItem("productsArr", JSON.stringify(temp));
     calculateTotalItems(temp);
     calculateTotalPrice(temp);
     setProudcts(temp);
@@ -48,7 +50,6 @@ function App() {
       }
       return obj;
     });
-    localStorage.setItem("productsArr", JSON.stringify(temp));
     calculateTotalItems(temp);
     calculateTotalPrice(temp);
     setProudcts(temp);
@@ -61,7 +62,6 @@ function App() {
       }
       return obj;
     });
-    localStorage.setItem("productsArr", JSON.stringify(temp));
     calculateTotalItems(temp);
     calculateTotalPrice(temp);
     setProudcts(temp);
